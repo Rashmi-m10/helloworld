@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('clone') {
             steps {
-                git 'https://github.com/Rashmi-m10/helloworld.git', branch: 'main'
+                git url:'https://github.com/Rashmi-m10/helloworld.git', branch: 'main'
             }
         }
         stage('Compile') {
