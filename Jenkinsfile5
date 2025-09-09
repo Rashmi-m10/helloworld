@@ -2,14 +2,20 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('1') {
             steps {
                 echo 'Hello World'
             }
         }
-        stage('morning') {
+        
+        stage('2') {
             steps {
-                ech 'good morning'
+                ec 'Good mOrning'
+            }
+        }
+        stage('3') {
+            steps {
+                echo 'Good night'
             }
         }
     }
