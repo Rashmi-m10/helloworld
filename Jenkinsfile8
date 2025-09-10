@@ -2,17 +2,17 @@ pipeline {
     agent any
 
     stages {
-        stage('1') {
+        stage('clone') {
             steps {
-                echo 'Hello World'
+                
             }}
-        stage('2') {
+        stage('compile') {
             steps {
-                ec 'good morning'
+                bat 'javac HelloWorld.java'
             }}
-        stage('3') {
+        stage('run') {
             steps {
-                echo 'good night'
+                bat 'java HelloWorld'
             }
         }
     }
